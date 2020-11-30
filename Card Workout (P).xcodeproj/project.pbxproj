@@ -12,6 +12,7 @@
 		9422783B25758E1500E49D4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9422783A25758E1500E49D4B /* Assets.xcassets */; };
 		9422783E25758E1500E49D4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9422783C25758E1500E49D4B /* LaunchScreen.storyboard */; };
 		942278482575903B00E49D4B /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942278472575903B00E49D4B /* CardSelectionVC.swift */; };
+		9422784C257591E800E49D4B /* CWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9422784B257591E800E49D4B /* CWButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9422783D25758E1500E49D4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9422783F25758E1500E49D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		942278472575903B00E49D4B /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
+		9422784B257591E800E49D4B /* CWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				9422783125758E1400E49D4B /* AppDelegate.swift */,
 				9422783325758E1400E49D4B /* SceneDelegate.swift */,
 				942278472575903B00E49D4B /* CardSelectionVC.swift */,
+				9422784B257591E800E49D4B /* CWButton.swift */,
 				9422783A25758E1500E49D4B /* Assets.xcassets */,
 				9422783C25758E1500E49D4B /* LaunchScreen.storyboard */,
 				9422783F25758E1500E49D4B /* Info.plist */,
@@ -136,6 +139,7 @@
 				9422783225758E1400E49D4B /* AppDelegate.swift in Sources */,
 				9422783425758E1400E49D4B /* SceneDelegate.swift in Sources */,
 				942278482575903B00E49D4B /* CardSelectionVC.swift in Sources */,
+				9422784C257591E800E49D4B /* CWButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
