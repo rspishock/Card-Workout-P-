@@ -18,14 +18,14 @@ class CardSelectionVC: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         configureUI()
-    }
+    }       //viewDidLoad()
     
     func configureUI() {
         configureCardImageView()
         configureStopButton()
         configureResetButton()
         configureRulesButton()
-    }
+    }       //configureUI()
     
     func configureCardImageView() {
         view.addSubview(cardImageView)  // ADD SUBVIEW TO VIEW!!!
@@ -40,7 +40,7 @@ class CardSelectionVC: UIViewController {
             cardImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -75)
         ])
         
-    }
+    }       //configureCardImageView()
     
     func configureStopButton() {
         view.addSubview(stopButton)
@@ -51,7 +51,7 @@ class CardSelectionVC: UIViewController {
             stopButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             stopButton.topAnchor.constraint(equalTo: cardImageView.bottomAnchor, constant: 30)
         ])
-    }
+    }       //configureStopButton()
     
     func configureResetButton() {
         view.addSubview(resetButton)
@@ -62,10 +62,12 @@ class CardSelectionVC: UIViewController {
             resetButton.leadingAnchor.constraint(equalTo: stopButton.leadingAnchor),
             resetButton.topAnchor.constraint(equalTo: stopButton.bottomAnchor, constant: 20)
         ])
-    }
+    }       //configureResetButton()
     
     func configureRulesButton() {
         view.addSubview(rulesButton)
+        
+        rulesButton.addTarget(self, action: #selector(presentRulesVC), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             rulesButton.widthAnchor.constraint(equalToConstant: 115),
@@ -73,5 +75,10 @@ class CardSelectionVC: UIViewController {
             rulesButton.trailingAnchor.constraint(equalTo: stopButton.trailingAnchor),
             rulesButton.topAnchor.constraint(equalTo: stopButton.bottomAnchor, constant: 20)
         ])
+    }       //configureRulesButton()
+    
+    @objc func presentRulesVC() {
+        present(RulesVC(), animated: true)
     }
 }
+            //presentRulesVC()
